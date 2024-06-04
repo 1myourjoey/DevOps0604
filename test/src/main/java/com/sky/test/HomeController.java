@@ -10,6 +10,7 @@ public class HomeController {
     @GetMapping("/")
     public String home(Model model) {
         model.addAttribute("name", "John Doe");
+    
         return "index"; // index.html 템플릿을 반환합니다.
     }
 }
